@@ -1,0 +1,53 @@
+@use 'colors';
+@use 'fonts';
+@use 'components';
+
+.header{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.header__figure{
+    height: 100%;
+    width: 100%;
+    background: colors.$linear-gradient-default, url(../img/pexels-iván-rivero-1046212.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.header > figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: colors.$font-color;
+    text-align: center;
+}
+
+
+.header__h1{
+    font-family: fonts.$handwriting;
+    font-size: 500%;
+}
+
+.header__h2{
+    @extend %h2Handwriting;
+}
+
+
+.header__logo{
+    font-size: 250%;
+    color: colors.$font-color;
+    border: colors.$border-blue;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.header__button{
+    @extend %cta;
+}

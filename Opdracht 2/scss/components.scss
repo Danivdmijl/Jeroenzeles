@@ -1,0 +1,27 @@
+@use 'colors';
+@use 'fonts';
+
+//call to action component bla bla nog iets
+
+%cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: colors.$light-blue;
+    border: none;
+    color: colors.$font-color;
+    border-radius: 0.5rem;
+}
+
+%cta:hover{
+    cursor: hover;
+    background: darken(colors.$light-blue, 40%);
+    transition: 0.2s;
+}
+
+
+// H2 heading for sections and header
+%h2Handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 380%;
+}

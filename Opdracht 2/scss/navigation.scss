@@ -1,0 +1,38 @@
+
+@use 'colors';
+@use 'components';
+
+.nav {
+    width: 100%;
+    background: colors.$blue-transparent;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: colors.$font-color;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__logo{
+    font-size: 250%;
+    color: colors.$font-color;
+    border: colors.$border-blue;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 120%;
+}
+
+.nav__button{
+    @extend %cta
+}
