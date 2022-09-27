@@ -19,9 +19,30 @@
     transition: 0.2s;
 }
 
+//default header
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1000px) {
+    %header{
+        background: red;
+    }
+}
+
 
 // H2 heading for sections and header
 %h2Handwriting{
     font-family: fonts.$handwriting;
     font-size: 380%;
+    color: colors.$font-color;
 }
+
+//default sections
+%section{
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: colors.$border-blue-small;
+} 

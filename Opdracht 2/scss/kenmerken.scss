@@ -1,0 +1,13 @@
+@use 'components';
+
+.kenmerken{
+    @extend %section;
+}
+
+.kenmerken__header{
+    @extend %header;
+}
+
+.kenmerken__h2{
+    @extend %h2Handwriting;
+}
