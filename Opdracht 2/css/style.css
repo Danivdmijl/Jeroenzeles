@@ -41,7 +41,7 @@ body {
   transition: 0.2s;
 }
 
-.gallerij__header, .kenmerken__header {
+.gallerij__header, .kenmerken__header, .over__header {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@ body {
   color: #eee;
 }
 
-.gallerij, .kenmerken, .over {
+.footer__img, .gallerij, .kenmerken, .over {
   height: 80rem;
   border-bottom: 0.2rem solid #395B64;
   padding-top: 4rem;
@@ -121,12 +121,6 @@ body {
 .header__h1 {
   font-family: "Satisfy", cursive;
   font-size: 500%;
-}
-
-.over__header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .over__columns {
@@ -201,7 +195,7 @@ body {
 }
 
 .gallerij {
-  margin-bottom: 70rem;
+  margin-bottom: 60rem;
 }
 
 .gallerij__header {
@@ -311,9 +305,18 @@ body {
     flex-direction: column;
   }
 }
-.footer {
-  height: 20vh;
-  width: 100%;
+.footer__footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem;
+}
+
+.footer__img {
+  min-height: 20rem;
+  height: 100%;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,17 @@
 @use 'colors';
 @use 'components';
 
-.footer{
-    height: 20vh;
-    width: 100%;
+.footer__footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6rem;
 }
 
 .footer__img{
-
+    min-height: 20rem ;
+    @extend %section;
+    height: 100%;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
 }

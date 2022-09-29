@@ -6,9 +6,7 @@
 }
 
 .over__header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend %header;
 }
 
 
