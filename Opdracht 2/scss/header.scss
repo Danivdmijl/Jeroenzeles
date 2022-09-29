@@ -41,11 +41,7 @@
 
 
 .header__logo{
-    font-size: 250%;
-    color: colors.$font-color;
-    border: colors.$border-blue;
-    border-radius: 50%;
-    padding: 1.5rem;
+    @extend %icon;
 }
 
 .header__button{

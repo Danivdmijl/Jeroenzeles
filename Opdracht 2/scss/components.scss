@@ -26,13 +26,6 @@
     justify-content: center;
 }
 
-@media screen and (max-width:1000px) {
-    %header{
-        background: red;
-    }
-}
-
-
 // H2 heading for sections and header
 %h2Handwriting{
     font-family: fonts.$handwriting;
@@ -42,7 +35,16 @@
 
 //default sections
 %section{
-    padding: 4rem;
     height: 80rem;
     border-bottom: colors.$border-blue-small;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 } 
+
+%icon{
+    font-size: 250%;
+    color: colors.$font-color;
+    border: colors.$border-blue;
+    border-radius: 50%;
+    padding: 1.5rem;
+}

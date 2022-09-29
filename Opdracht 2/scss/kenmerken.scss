@@ -1,4 +1,5 @@
 @use 'components';
+@use 'colors';
 
 .kenmerken{
     @extend %section;
@@ -10,4 +11,35 @@
 
 .kenmerken__h2{
     @extend %h2Handwriting;
+}
+
+.kenmerken__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;   
+}
+
+.kenmerken__listItem{
+    list-style: none;
+    color: colors.$font-color;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerken__p{
+    width: 30ch;
+    text-align: center;
+}
+
+.kenmerken__logo{
+    @extend %icon;
+    font-size: 180%;
 }
