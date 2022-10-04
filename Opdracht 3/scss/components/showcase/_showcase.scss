@@ -1,0 +1,52 @@
+@use '../../abstract/mixins';
+@use '../../abstract/colors';
+.showcase{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 4rem;
+    background:colors.$background;
+
+    &__input{
+        font-size: 100%;
+        padding: 2rem;
+        width: 50%;
+        border: none;
+        background: none;
+        border-bottom: 0.2rem solid #54BAB9;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__font{
+        font-size: 120%;
+        font-weight: 400;
+    }
+
+    &__output{
+        font-size: 250%;
+        
+        &--cursive{
+            @include mixins.fontCursive;
+        }
+
+        &--sansSerif{
+            @include mixins.fontsansSerif;
+        }
+
+        &--serif{
+            @include mixins.fontSerif;
+        }
+    }
+
+}

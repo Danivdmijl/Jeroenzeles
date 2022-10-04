@@ -1,9 +1,12 @@
-@use 'colors';
-@use 'mixins';
+@use './abstract/mixins';
+@use "./abstract/colors";
 
 body{
-    background: colors.$background;
     @include mixins.flexCenter;
     min-height: 100vh;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: 'Oswald', sans-serif;
+    background: colors.$gradient;
 }

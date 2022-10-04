@@ -1,27 +1,23 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Missing argument $amount.
+ *   ,--> scss\abstract\_colors.scss
+ * 3 | $gradient: linear-gradient(to bottom right, #54BAB9, 60% darken(#219F94))
+ *   |                                                          ^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> sass:color
+ * 1 | @function darken($color, $amount) {
+ *   |           ======================= declaration
+ *   '
+ *   scss\abstract\_colors.scss 3:58  @use
+ *   scss\_base.scss 2:1              @use
+ *   scss\style.scss 2:1              root stylesheet */
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $amount.\a   \250c \2500 \2500 > scss\\abstract\\_colors.scss\a 3 \2502  $gradient: linear-gradient(to bottom right, #54BAB9, 60% darken(#219F94))\a   \2502                                                           ^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:color\a 1 \2502  @function darken($color, $amount) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss\\abstract\\_colors.scss 3:58  @use\a   scss\\_base.scss 2:1              @use\a   scss\\style.scss 2:1              root stylesheet";
 }
-
-body {
-  font-size: 2rem;
-}
-
-body {
-  background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-/*# sourceMappingURL=style.css.map */
