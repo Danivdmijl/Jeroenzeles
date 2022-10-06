@@ -1,19 +1,25 @@
 @use '../../abstract/mixins';
 @use '../../abstract/colors';
+@use "../../abstract/animations";
 
 .header {
     width: 80vw;
-    height: 15rem;
+    max-width: 150rem;
+    min-height: 15rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: colors.$background;
+    padding: 4rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    @include animations.popup;
 
     &__logo {
         font-size: 200%;
-        background: #54BAB9;
+        background: colors.$gradient;
         color: #F7ECDE;
-        border: 0.2rem dashed #54BAB9;
+        border: 0.2rem dashed transparent;
         border-radius: 50%;
         box-sizing: border-box;
         backface-visibility: hidden;
@@ -26,12 +32,14 @@
             background: transparent;
             box-sizing: border-box;
             @include mixins.rotate;
+            border: 0.2rem dashed #54BAB9;
         }
     }
 
     &__rightWrapper {
         display: flex;
         gap: 4rem;
+        align-items: center;
     }
 
     &__avatar {

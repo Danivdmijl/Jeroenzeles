@@ -2,3 +2,5 @@
 @use 'base';
 @use './components/header/header';
 @use'./components/showcase/showcase';
+@use './components/toggle/toggle';
+@use './abstract/mediaqueries';

@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Lato&family=Peralta&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/3bf47b6d3c.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,26 +24,38 @@
             <i class="fa-solid fa-pen"></i>
         </figure>
         <div class="header__rightWrapper">
-            <input class="header__toggle" type="checkbox" name="" id="">
+            <label for="toggle" class="header__label">
+                <input id="toggle" class="header__toggle" type="checkbox" name="" id="">
+            </label>
             <figure class="header__avatar">
                 <img class="header__img" src="img/george.webp" alt="Placeholder plaatje">
             </figure>
         </div>
     </header>
     <article class="showcase">
-        <input type="text" class="showcase__input">
+        <input id="js--input" type="text" class="showcase__input">
         <section class="showcase__section">
-            <h3 class="showcase__font">Peralta</h3>
-            <h2 class="showcase__output showcase__output--cursive">Placeholder Output</h2>
+            <div class="showcase__wrapper">
+                <h3 class="showcase__font">Peralta</h3>
+                <input class="showcase__heart" type="checkbox">
+            </div>
+            <h2 id="js--dancing" class="showcase__output showcase__output--cursive">Placeholder Output</h2>
         </section>
         <section class="showcase__section">
-            <h3 class="showcase__font">Lato</h3>
-            <h2 class="showcase__output showcase__output--sansSerif">Placeholder Output</h2>
+            <div class="showcase__wrapper">
+                <h3 class="showcase__font">Lato</h3>
+                <input class="showcase__heart" type="checkbox">
+            </div>
+            <h2 id="js--lato" class="showcase__output showcase__output--sansSerif">Placeholder Output</h2>
         </section>
         <section class="showcase__section">
-            <h3 class="showcase__font">Gemunu Libre</h3>
-            <h2 class="showcase__output showcase__output--Serif">Placeholder Output</h2>
+            <div class="showcase__wrapper">
+                <h3 class="showcase__font">Gemunu Libre</h3>
+                <input class="showcase__heart" type="checkbox">
+            </div>
+            <h2 id="js--merryweather" class="showcase__output showcase__output--Serif">Placeholder Output</h2>
         </section>
     </article>
 </body>
+
 </html>

@@ -1,0 +1,36 @@
+@use "../../abstract/colors";
+
+.header__toggle {
+    appearance: none;
+    width: 9rem;
+    height: 4rem;
+    border-radius: 5rem;
+    position: relative;
+    background: colors.$background--dark;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        background: colors.$gradient;
+        transition: 0.4s;
+    }
+
+    &:checked {
+        background: colors.$background;
+
+    }
+
+    &:checked::after {
+        left: 80%;
+    }
+}

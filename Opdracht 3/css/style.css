@@ -1,23 +1,217 @@
-/* Error: Missing argument $amount.
- *   ,--> scss\abstract\_colors.scss
- * 3 | $gradient: linear-gradient(to bottom right, #54BAB9, 60% darken(#219F94))
- *   |                                                          ^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> sass:color
- * 1 | @function darken($color, $amount) {
- *   |           ======================= declaration
- *   '
- *   scss\abstract\_colors.scss 3:58  @use
- *   scss\_base.scss 2:1              @use
- *   scss\style.scss 2:1              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $amount.\a   \250c \2500 \2500 > scss\\abstract\\_colors.scss\a 3 \2502  $gradient: linear-gradient(to bottom right, #54BAB9, 60% darken(#219F94))\a   \2502                                                           ^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:color\a 1 \2502  @function darken($color, $amount) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss\\abstract\\_colors.scss 3:58  @use\a   scss\\_base.scss 2:1              @use\a   scss\\style.scss 2:1              root stylesheet";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 4rem;
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(to bottom right, #54BAB9, 60%, #219F94);
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+.header {
+  width: 80vw;
+  max-width: 150rem;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F7ECDE;
+  padding: 4rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  animation-name: popup;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header__logo {
+  font-size: 200%;
+  background: linear-gradient(to bottom right, #54BAB9, 60%, #219F94);
+  color: #F7ECDE;
+  border: 0.2rem dashed transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo:hover {
+  color: #54BAB9;
+  background: transparent;
+  box-sizing: border-box;
+  transform: rotate(360deg);
+  transition: 0.6s all;
+  transition-timing-function: linear;
+  border: 0.2rem dashed #54BAB9;
+}
+.header__rightWrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.header__avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.header__avatar:hover {
+  transform: rotate(360deg);
+  transition: 0.8s all;
+  transition-timing-function: linear;
+}
+.header__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.showcase {
+  width: 80vw;
+  max-width: 150rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 4rem;
+  background: #F7ECDE;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: inset 0 -1rem 2rem 0 rgba(84, 186, 185, 0.4);
+  animation-name: popup;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.showcase__input {
+  font-size: 100%;
+  padding: 2rem;
+  width: 50%;
+  border: none;
+  background: none;
+  border-bottom: 0.2rem solid #54BAB9;
+}
+.showcase__input:focus {
+  outline: none;
+}
+.showcase__section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.showcase__wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.showcase__heart {
+  background: #54BAB9;
+}
+.showcase__font {
+  font-size: 120%;
+  font-weight: 400;
+}
+.showcase__output {
+  font-size: 250%;
+}
+.showcase__output--cursive {
+  font-weight: 400;
+  font-family: "Peralta", cursive;
+}
+.showcase__output--sansSerif {
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+.showcase__output--serif {
+  font-weight: 400;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+.header__toggle {
+  appearance: none;
+  width: 9rem;
+  height: 4rem;
+  border-radius: 5rem;
+  position: relative;
+  background: #2C3333;
+}
+.header__toggle:hover {
+  cursor: pointer;
+}
+.header__toggle::after {
+  content: "";
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom right, #54BAB9, 60%, #219F94);
+  transition: 0.4s;
+}
+.header__toggle:checked {
+  background: #F7ECDE;
+}
+.header__toggle:checked::after {
+  left: 80%;
+}
+
+@media screen and (max-width: 62.5rem) {
+  body {
+    padding: 1rem;
+  }
+  .showcase, .header {
+    width: calc(100vw - 1rem - 1rem);
+  }
+  .showcase__input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  body {
+    font-size: 1.6rem;
+  }
+  .header {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .header__rightWrapper {
+    flex-direction: column;
+  }
+  .showcase__input {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
