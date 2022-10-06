@@ -1,7 +1,8 @@
 @use '../../abstract/mixins';
 @use '../../abstract/colors';
 @use '../../abstract/animations';
-.showcase{
+
+.showcase {
     width: 80vw;
     max-width: 150rem;
     display: flex;
@@ -9,13 +10,13 @@
     justify-content: space-between;
     padding: 4rem;
     gap: 4rem;
-    background:colors.$background;
+    background: colors.$background;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: inset 0 -1rem 2rem 0 rgba(84, 186, 185, 0.4);
     @include animations.popup;
 
-    &__input{
+    &__input {
         font-size: 100%;
         padding: 2rem;
         width: 50%;
@@ -23,44 +24,40 @@
         background: none;
         border-bottom: 0.2rem solid #54BAB9;
 
-        &:focus{
+        &:focus {
             outline: none;
         }
     }
 
-    &__section{
+    &__section {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         gap: 2rem;
         align-items: center;
     }
 
-    &__heart{
-        background: #54BAB9;
-    }
-
-    &__font{
+    &__font {
         font-size: 120%;
         font-weight: 400;
     }
 
-    &__output{
+    &__output {
         font-size: 250%;
-        
-        &--cursive{
+
+        &--cursive {
             @include mixins.fontCursive;
         }
 
-        &--sansSerif{
+        &--sansSerif {
             @include mixins.fontsansSerif;
         }
 
-        &--serif{
+        &--serif {
             @include mixins.fontSerif;
         }
     }

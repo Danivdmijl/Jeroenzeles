@@ -1,6 +1,10 @@
 @use './abstract/mixins';
 @use "./abstract/colors";
 
+*:focus{
+    outline: 0.2rem dashed blue !important;
+}
+
 body{
     @include mixins.flexCenter;
     min-height: 100vh;
@@ -9,4 +13,8 @@ body{
     padding: 4rem;
     font-family: 'Oswald', sans-serif;
     background: colors.$gradient;
+}
+
+.style1{
+    background: black;
 }
