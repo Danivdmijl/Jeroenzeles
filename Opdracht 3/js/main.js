@@ -30,7 +30,10 @@ for(let i = 0; i < hearts.length; i++){
 const toggle = document.getElementById("toggle");
 const body = document.getElementById("js--body")
 
-toggle.onclick = function() {
-    console.log("Klik");
-    body.setAttribute("class", "style1");
+toggle.onchange = function() {
+    if (toggle.checked === true){
+        body.setAttribute("class", "style1");
+        return;
+    }
+    body.removeAttribute("class", "style1");
 };  
