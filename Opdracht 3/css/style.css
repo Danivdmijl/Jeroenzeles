@@ -32,7 +32,51 @@ body {
 }
 
 .style1 {
-  background: black;
+  background: rgb(54, 54, 54);
+  width: 80vw;
+  max-width: 150rem;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.style2{
+  width: 80vw;
+  max-width: 150rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+  gap: 4rem;
+  background: rgb(54, 54, 54);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: inset 0 -1rem 2rem 0 rgba(84, 186, 185, 0.4);
+}
+
+.style3{
+  font-size: 250%;
+  font-weight: 400;
+  font-family: "Peralta", cursive;
+  color: white;
+}
+
+.style4{
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 250%;
+}
+
+.style5{
+  font-weight: 400;
+  font-family: "Gemunu Libre", sans-serif;
+  color: white;
+  font-size: 250%;
 }
 
 @keyframes popup {

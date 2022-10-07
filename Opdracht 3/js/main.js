@@ -28,12 +28,26 @@ for(let i = 0; i < hearts.length; i++){
 // Dark mode
 
 const toggle = document.getElementById("toggle");
-const body = document.getElementById("js--body")
+const header = document.getElementById("js--darkHeader");
+const article = document.getElementById("js--darkArticle");
+const text1 = document.getElementById("js--dancing");
+const text2 = document.getElementById("js--lato");
+const text3 = document.getElementById("js--merryweather");
+
 
 toggle.onchange = function() {
     if (toggle.checked === true){
-        body.setAttribute("class", "style1");
+        article.setAttribute("class", "style2");
+        header.setAttribute("class", "style1");
+        text1.setAttribute("class", "style3");
+        text2.setAttribute("class", "style4");
+        text3.setAttribute("class", "style5");
         return;
     }
-    body.removeAttribute("class", "style1");
+    article.setAttribute("class", "showcase");
+    header.setAttribute("class", "header");
+    article.setAttribute("class", "showcase");
+    text1.setAttribute("class", "showcase__output--cursive" + " showcase__output");
+    text2.setAttribute("class", "showcase__output--sansSerif" + " showcase__output");
+    text3.setAttribute("class", "showcase__output" + " showcase__output--serif");
 };  
