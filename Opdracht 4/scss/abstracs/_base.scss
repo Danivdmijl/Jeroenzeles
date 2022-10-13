@@ -1,8 +1,11 @@
 @use "./mixins";
+@use "./variable";
 body{
     min-height: 100vh;
     @include mixins.flex;
     font-size: 2rem;
+    background: variable.$gradient;
+    padding: 4rem;
 }
 
 h2{
