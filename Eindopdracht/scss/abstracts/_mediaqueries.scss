@@ -1,0 +1,20 @@
+@media screen and (max-width: 48.25rem) {
+    .header__p{
+        display: none;
+    }
+    .header__input{
+        display: none;
+    }
+    .header__button--login{
+        display: none;
+    }
+    .header__button--signUp{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

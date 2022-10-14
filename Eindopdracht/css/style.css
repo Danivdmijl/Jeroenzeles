@@ -34,22 +34,71 @@ body {
   padding: 0 2rem;
   font-size: 1.4rem;
   line-height: 1.4;
+  width: 13%;
 }
 .header__input {
-  height: 3.2rem;
-  border-radius: 0;
-  width: 73%;
-  border: 0.19rem solid;
+  height: 4.6rem;
+  background: #eee;
+  border-radius: 3rem;
+  width: 100%;
+  border: 0.1rem solid black;
+  padding: 1rem;
+  box-shadow: 0 0 1.5rem 0.4rem rgba(0, 0, 0, 0.06);
 }
-.header__button {
-  width: 8.2rem;
+.header__cart {
+  padding: 1rem;
+}
+.header__button--login {
+  width: 10rem;
+  padding: 0 1.2rem;
+  vertical-align: bottom;
+  white-space: nowrap;
+  background: #fff;
+  height: 53%;
+  margin-left: 1.4rem;
+  color: black;
+  font-weight: 900;
+  border: 0.1rem solid black;
+}
+.header__button--signUp {
+  width: 10rem;
   padding: 0 1.2rem;
   vertical-align: bottom;
   white-space: nowrap;
   background: black;
-  height: 50%;
+  height: 53%;
   margin-left: 1.4rem;
   color: #fff;
+  font-weight: 900;
+}
+.header__globe {
+  padding: 0.8rem;
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+}
+
+.header__globe, .header__button--signUp, .header__button--login, .header__cart, .header__p, .header__img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 48.25rem) {
+  .header__p {
+    display: none;
+  }
+  .header__input {
+    display: none;
+  }
+  .header__button--login {
+    display: none;
+  }
+  .header__button--signUp {
+    display: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
