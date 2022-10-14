@@ -1,0 +1,40 @@
+@use "../abstracts/mixins";
+
+.header{
+    width: 100vw;
+    height: 7.2rem;
+    background: #fff;
+    padding: 0 2.4rem;
+    box-shadow: 0 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+
+    &__img{
+        width: 9.1rem;
+        height: 4.1rem;
+        max-width: 100%;
+        height: auto;
+    }
+    &__p{
+        padding: 0 2rem;
+        font-size: 1.4rem;
+        line-height: 1.4;
+
+    }
+    &__input{
+        height: 3.2rem; 
+        border-radius: 0;
+        width: 73%;
+        border: 0.19rem solid;
+    }
+    &__button{
+        width: 8.2rem;
+        padding: 0 1.2rem;
+        vertical-align: bottom;
+        white-space: nowrap;
+        background: black;
+        height: 50%;
+        margin-left: 1.4rem;
+        color: #fff;
+    }
+}
