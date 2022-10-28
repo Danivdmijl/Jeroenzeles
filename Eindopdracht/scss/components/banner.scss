@@ -4,15 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100vw;
+    max-width: 100%;
     max-height: auto;
     position: relative;
     margin-top: 0.049rem;
     z-index: -1;
 
     &__img{
-        width: 134rem;
-        height: 40rem;
+        max-width: 134rem;
+        max-height: 40rem;
+        width: 100%;
+        height: 100%;
     }
 
     &__article{
@@ -36,4 +38,29 @@
         line-height: 1.4;
         font-size: 1.6rem;
     }
+
+    &__section--links{
+        position: absolute;
+        bottom: 18.5rem;
+        left: 30rem;
+    }
+
+    &__section--rechts  {
+        position: absolute;
+        bottom: 18.5rem;
+        right: 31.5rem;
+    }
+
+    &__button{
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: black;
+        color: white;
+        font-size: larger;
+    }
+}
+
+.banner_button:hover{
+    cursor:pointer;
 }

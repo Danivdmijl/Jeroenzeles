@@ -1,7 +1,7 @@
 @use "../abstracts/mixins";
 
 .header{
-    width: 100vw;
+    max-width: 100vw;
     height: 7.2rem;
     background: #fff;
     padding: 0 2.4rem;
