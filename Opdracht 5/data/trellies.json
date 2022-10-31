@@ -1,5 +1,5 @@
 {   
-    "title": "Hij doet het swa",
+    "title": "Hij doet het",
     "activitiesCount": 1,
     "activities": [
         {
@@ -8,19 +8,12 @@
         },
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Vandaag"
+            "label": "Morgen"
         },
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Vandaag"
-        },
-        {
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Vandaag Deze"
-        },
-        {
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Vandaag"
+            "label": "Over morgen"
         }
+
     ]
 }
