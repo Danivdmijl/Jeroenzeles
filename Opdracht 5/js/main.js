@@ -11,5 +11,9 @@ fetch("/data/trellies.json").then(
         clone.classList.toggle('tasks--hidden');
         clone.setAttribute("id","");
         document.querySelector('main').appendChild(clone);
+        /* h2 */
+        clone.firstElementChild.firstElementChild.innerText = data.title;
+        /* number */
+        clone.firstElementChild.children[1].children[0].innerText = data.activitiesCount;
     }
 )
