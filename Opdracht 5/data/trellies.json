@@ -1,19 +1,32 @@
 {   
     "title": "Hij doet het",
-    "activitiesCount": 1,
     "activities": [
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Vandaag"
+            "label": "Vandaag",
+            "extraclass": "", 
+            "author": "DM"
         },
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Morgen"
-        },
-        {
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
-            "label": "Over morgen"
-        }
+            "label": "Morgen",
+            "extraclass": "morgen",
+            "author": "DM"
 
+        },
+        {
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
+            "label": "weekend",
+            "extraclass": "weekend",
+            "author": "DM"
+
+        },
+
+        {
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorem repellat assumenda labore perferendis, atque accusantium beatae. Ex asperiores inventore enim voluptatem quos earum pariatur! Id, rerum cum! Temporibus, ex!",
+            "label": "ooit",
+            "extraclass": "ooit",
+            "author": "DM"
+        }
     ]
 }
