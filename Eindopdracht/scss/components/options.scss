@@ -4,6 +4,7 @@
     height: 100%;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 
     &__button{
         background: none;

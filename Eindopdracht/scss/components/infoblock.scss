@@ -1,0 +1,39 @@
+.infoblock{
+    border: 1px solid #d1d7dc ;
+    width: 68.5%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__h3{
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 2.4rem;
+    }
+
+    &__p{
+        margin-bottom: 1.6rem;
+        max-width: 80rem;
+        font-weight: inherit;
+        line-height: 1.4;
+        font-size: 1.6rem;
+    }
+
+    &__button{
+        color: #1c1d1f;
+        background-color: transparent;
+        border: 0.1rem solid #1c1d1f;
+        width: 12rem;
+        height: 4rem;
+        padding: 0 1.2rem;
+        font-weight: 700;
+    }
+}
+
+
+.infoblock__button:hover{
+    cursor: pointer;
+}
