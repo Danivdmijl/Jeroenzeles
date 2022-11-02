@@ -19,8 +19,8 @@
 
     &__article{
         position: absolute;
-        top: 6rem;
-        left: 35rem;
+        top: 6.5rem;
+        left: 6.5rem;
         background-color: white;
         color: black;
         padding: 2rem;
@@ -38,29 +38,4 @@
         line-height: 1.4;
         font-size: 1.6rem;
     }
-
-    &__section--links{
-        position: absolute;
-        bottom: 18.5rem;
-        left: 30rem;
-    }
-
-    &__section--rechts  {
-        position: absolute;
-        bottom: 18.5rem;
-        right: 31.5rem;
-    }
-
-    &__button{
-        border-radius: 50%;
-        width: 3.5rem;
-        height: 3.5rem;
-        background: black;
-        color: white;
-        font-size: larger;
-    }
-}
-
-.banner_button:hover{
-    cursor:pointer;
 }
