@@ -1,0 +1,33 @@
+.category{
+    min-width: 100vw;
+    height: 100%;
+    // background: #f7f9fa;
+    background: green;
+    margin-bottom: 10rem;
+
+    &__title{
+        width: 68.5%;
+        height: auto;
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 2.4rem;
+        padding-top: 6.4rem;
+        padding-left: 34.5rem;
+    }
+
+    &__containerOptions{
+        display: flex;
+        gap: 4.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 68.5%;
+        height: auto;
+        padding-top: 3.4rem;
+        padding-left: 34.5rem;
+    }
+
+    &__options{
+    }
+
+
+}

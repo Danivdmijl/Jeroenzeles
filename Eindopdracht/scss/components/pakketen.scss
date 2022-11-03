@@ -4,13 +4,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 
 .titlePakketen{
-    padding: 1rem;
+    padding-bottom: 1rem;
     margin-top: 7rem;
     width: 68.5%;
     height: auto;
@@ -30,7 +30,7 @@
 
     &__title{
         color: #1c1d1f;
-        font-weight: 600;
+        font-weight: 800;
         font-size: 1.4rem;
         margin-bottom: 0.5rem;
     }
@@ -55,6 +55,8 @@
         display: flex;
         height: auto;
         width: auto;
+        flex-direction: row;
+        gap: 0.8rem;
     }
 
     &__prijsnu{
@@ -67,7 +69,7 @@
         color: #6a6f73;
         font-weight: 400;
         font-size: 1.45rem;
-        line-height: 1;
+        line-height: 1.55rem;
         text-decoration: line-through;
     }
 }
