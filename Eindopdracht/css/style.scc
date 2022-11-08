@@ -99,17 +99,17 @@ body {
     justify-content: center;
   }
 }
-@media screen and (max-width: 48.625rem) {
-  .business__section {
-    width: 100% !important;
-  }
-  .business__button {
-    background: green;
-  }
-}
 @media screen and (max-width: 60.75rem) {
   .banner__article {
     display: none;
+  }
+}
+@media screen and (max-width: 48.875) {
+  .business__section {
+    width: 100%;
+  }
+  .business__button {
+    width: 200%;
   }
 }
 .banner {
@@ -442,7 +442,7 @@ body {
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
   font-size: 1.9rem;
@@ -450,7 +450,7 @@ body {
   line-height: 1.4;
 }
 .business__p {
-  max-width: 40rem;
+  width: 30rem;
 }
 .business__button {
   width: 65%;
@@ -466,4 +466,4 @@ body {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scc.map */
