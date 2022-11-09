@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .containerPakketen{
     width: 68.5%;
     height: auto;
@@ -10,7 +12,7 @@
 
 
 .titlePakketen{
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     margin-top: 7rem;
     width: 68.5%;
     height: auto;
@@ -29,7 +31,7 @@
     }
 
     &__title{
-        color: #1c1d1f;
+        color: variables.$donkerzwart;
         font-weight: 800;
         font-size: 1.4rem;
         margin-bottom: 0.5rem;

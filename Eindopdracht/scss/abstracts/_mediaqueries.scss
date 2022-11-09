@@ -29,6 +29,11 @@
     }
 }
 
+@media screen and (max-width: 49.375rem) {
+    .business__img--weg{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 60.75rem) {
     .banner__article{

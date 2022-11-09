@@ -1,4 +1,5 @@
 @use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 .banner{
     display: flex;
@@ -8,7 +9,7 @@
     max-height: auto;
     position: relative;
     margin-top: 0.049rem;
-    z-index: -1;
+    z-index: 1;
 
     &__img{
         max-width: 134rem;
@@ -21,8 +22,8 @@
         position: absolute;
         top: 6.5rem;
         left: 6.5rem;
-        background-color: white;
-        color: black;
+        background-color: variables.$backgroundwhite;
+        color: variables.$zwart;
         padding: 2rem;
         width: 44rem;
         height: 14rem;

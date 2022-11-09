@@ -1,0 +1,58 @@
+@use "../abstracts/variables";
+
+.footer{
+    background: variables.$donkerzwart;
+    border-top: 0.1rem solid #3e4143;
+    color: variables.$backgroundwhite;
+    padding: 2.8rem;
+    padding-left: 5rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__section{
+        display: flex;
+        max-width: 34%;
+        flex-wrap: wrap;
+    }
+
+    &__ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: left;
+        margin-bottom: 4rem;
+    }
+
+    &__li{
+        font-size: 1.4rem;
+        width: 20rem;
+    }
+
+    &__logo{
+        max-width: 30%;
+        max-height: 30%;
+        vertical-align: middle;
+    }
+
+    &__button{
+        border-color: variables.$backgroundwhite;
+        color: variables.$backgroundwhite;
+        justify-content: flex-start;
+        padding: 1 1.6rem;
+        min-width: 14rem;
+        height: 4rem;
+        border: 0.1rem solid variables.$backgroundwhite;;
+        cursor: pointer;
+        background: variables.$donkerzwart;
+        font-weight: 400;
+        line-height: 1.4;
+        font-size: 1.6rem;
+    }
+
+    
+}
+
